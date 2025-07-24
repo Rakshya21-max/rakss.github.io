@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake</title>
-    <link rel="stylesheet" href="snake.css">
-    <script src="snake.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rakss-To-MR. Karki Jii</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Snake Game</h1>
-    <canvas id="board"></canvas>
-    <br>
-    <div id="scoreBoard">
-  <span>Score: <span id="score">0</span></span>
-  &nbsp;&nbsp;|&nbsp;&nbsp;
-  <span>High Score: <span id="highScore">0</span></span>
-</div>
+  <div class="container">
 
-    <button id ="btn" onclick="restartGame()">Restart Game</button>
+    <!-- Header -->
+    <header>Happy Birthday!</header>
+
+    <!-- Pages Wrapper -->
+    <main>
+
+      <!-- Page 1 -->
+      <section class="page active" id="page1">
+        <div class="birthday-message">
+          <p> Happiest 20th birthday MR.! I hope this special day brings you joy, laughter, and all the happiness you deserve.
+          No matter where life takes us, I will always wish you the best. May this new year of your life be filled with success,
+          good health, and beautiful moments.This almost 4 years memories hold alot 
+            of happiness, sadness,ups and down. some days have been rough as hell but at the end everything that connects with you 
+            truns out to be so beautiful. Thank you for everything you have done till the date. I hope you continue to grow into the amazing person you are meant to be, finding love,
+          peace, and everything your heart longs for.</p>
+        </div>
+        <button id="nextBtn1" class="btn">Next</button>
+      </section>
+
+      <!-- Page 2: Gallery -->
+      <section class="page" id="page2">
+        <div class="gallery-stack">
+          <img src="img/a.jpg" alt="Memory 1" />
+        <img src="img/b.jpg" alt="Memory 2" />
+        <img src="img/c.jpg" alt="Memory 3" />
+        <img src="img/d.jpg" alt="Memory 4" />
+        <img src="img/e.jpg" alt="Memory 5" />
+        <img src="img/f.jpg" alt="Memory 6" />
+        <img src="img/g.jpg" alt="Memory 7" />
+        <img src="img/h.jpg" alt="Memory 8" />
+        <img src="img/i.jpg" alt="Memory 9" />
+        <img src="img/j.jpg" alt="Memory 10" />
+        <img src="img/k.jpg" alt="Memory 11" />
+       </div>
+        <button id="nextBtn2" class="btn">Next</button>
+      </section>
+
+      <!-- Page 3: Manual -->
+      <section class="page" id="page3">
+        <p>
+          Yooo!!! Brother is getting older! 🎂 Wishing you the most amazing year ahead filled with love, laughter, and all your dreams coming true.
+        </p><BR>
+
+        <p>CLICK ON OPEN MANUAL. PLEASE!!!</p>
+        <button id="openManualBtn" class="btn">Open Manual 💌</button>
+      </section>
+
+    </main>
+
+    <!-- Manual Letter Modal -->
+    <div id="manualModal" class="modal">
+      <div class="modal-content">
+        <span id="closeManualBtn" class="close">&times;</span>
+        <div class="manual-letter">
+          <h2>When Life Gets Tough...</h2>
+          <p>
+            If you start feeling you are falling apart and even when you are trying all you could and still it doesn't feel right,
+            remember these steps to keep your heart strong and hope alive:
+          </p>
+             <ul>
+              <li>Take a deep breath. Pause and let yourself feel what you need to feel.</li>
+              <li>Reach out to someone you trust. You don’t have to carry everything alone.</li>
+              <li>Break your problems into small steps and tackle one at a time.</li>
+              <li>Remember, it’s okay to rest. Recharge your mind and body.</li>
+              <li>Focus on what you can control, and let go of what you cannot.</li>
+              <li>Keep reminding yourself: you are stronger than you think.</li>
+              <li>Celebrate small wins, no matter how tiny they seem.</li>
+              <li>Believe in the light at the end of the tunnel — it’s there.</li>
+              <li>Be kind to yourself, always.</li>
+            </ul>
+          <p>Sending you a big virtual hug! 🤗💖</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
